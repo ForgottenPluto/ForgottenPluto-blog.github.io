@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+          <head>
+        <meta charset="utf-8">
+            
+            <title>
+                css常用字体 | Forgotten Pluto
+            </title>
+            <meta content="width=device-width, initial-scale=1" name="viewport">
+            <meta name="theme-color" content="#4184f3">
+            
+            
+            <link href="/favicon.ico" rel="icon"/>
+            
+
+            <link rel="stylesheet" href="/css/highlight.light.css">
+            <link rel="stylesheet" href="/css/prism-customize.css">
+            <link rel="stylesheet" href="/css/nav-icon.css">
+            <link rel="stylesheet" href="/css/waves.min.css">
+            <link rel="stylesheet" href="/css/jquery.tocify.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/nav-indicator.css">
+            
+  
+
+  
+            </meta>
+        </meta>
+    <link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+    <body>
+        <header>
+            <!-- cover image or sth. -->
+        </header>
+        <div id="main" class="m-scene">
+            
+<div class="nav-wrapper">
+
+    <div class="container">
+        <nav>
+            <div class="logo wave">
+                <a href="/" id="logo">
+                    Forgotten Pluto
+                </a>
+            </div>
+            <div class="nav-toggle-icon" >
+                <div class="material-hamburger">
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                </div>
+            </div>
+            <div class="menu-wrapper">
+                <div class="nav-indicator">
+                </div>
+                <ul class="menus">
+                    
+                     
+                        <li>
+                            <a class="wave " href="/">
+                                首页
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a class="wave " href="/archives">
+                                归档
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a class="wave no-smoothstate" href="/atom.xml">
+                                订阅
+                            </a>
+                        </li>
+                     
+                    
+                   
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+            <div class="container content">
+                <div class="scene_element scene_element--fadein">
+                    <div class="row">
+    <div class="main">
+        <article>
+          
+          <header class="post-header">
+          
+          </header>
+          <h1 class="post-title">css常用字体</h1>
+
+          <section class="post-info">
+            <span class="post-date">2017/03/20</span>
+            
+            
+            <span class="post-tags">
+              <ul class="post-tag-list"><li class="post-tag-list-item"><a class="post-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+            </span>
+            
+          </section>
+
+          <section class="post-content">
+            <h2 id="1-js-提供了一些迭代的方法，包括every-some-filter-map，forEach"><a href="/2017/03/20/数组迭代方法，归并方法/#1-js-提供了一些迭代的方法，包括every-some-filter-map，forEach" class="headerlink" title="1.js 提供了一些迭代的方法，包括every,some,filter,map，forEach."></a>1.js 提供了一些迭代的方法，包括every,some,filter,map，forEach.</h2><p>every()：对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true。<br>filter()：对数组中的每一项运行给定函数，返回该函数会返回true 的项组成的数组。<br>forEach()：对数组中的每一项运行给定函数。这个方法没有返回值。<br>map()：对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。<br>some()：对数组中的每一项运行给定函数，如果该函数对任一项返回true，则返回true.<br>every主要是用于判断一个素组中的值是否符合某个标准。必须是每个值都符合才会返回true。否则返回false.<br>而some()函数只需要有一个值返回的是true就会返回true.<br>例子如下：<br><code>var numbers = [1,2,3,4,5,4,3,2,1];</code><br><code>var everyResult = numbers.every(function(item, index, array){</code><br><code>return (item &gt; 2);</code><br><code>});</code><br><code>alert(everyResult);</code> //false<br><code>var someResult = numbers.some(function(item, index, array){</code><br><code>return (item &gt; 2);</code><br><code>});</code><br><code>alert(someResult);</code> //true  </p>
+<h2 id="2-filter，filter返回的是一个符合某种条件的数组。"><a href="/2017/03/20/数组迭代方法，归并方法/#2-filter，filter返回的是一个符合某种条件的数组。" class="headerlink" title="2.filter，filter返回的是一个符合某种条件的数组。"></a>2.filter，filter返回的是一个符合某种条件的数组。</h2><p>例如：数组<br><code>number = [1,2，1,3,5,3,4,9,6,9];</code><br><code>var result = number.filter(function(item,index,array){</code><br><code>return (item&gt;5);</code><br><code>});</code><br><code>alert(result); /[9,6,9];</code>   </p>
+<h2 id="3-map-map和filter函数类似，同样是hi返回的是一个数组。不过，这个数组的每一项都是在原始数组中的对应项上运行传入函数的结果。例如："><a href="/2017/03/20/数组迭代方法，归并方法/#3-map-map和filter函数类似，同样是hi返回的是一个数组。不过，这个数组的每一项都是在原始数组中的对应项上运行传入函数的结果。例如：" class="headerlink" title="3.map,map和filter函数类似，同样是hi返回的是一个数组。不过，这个数组的每一项都是在原始数组中的对应项上运行传入函数的结果。例如："></a>3.map,map和filter函数类似，同样是hi返回的是一个数组。不过，这个数组的每一项都是在原始数组中的对应项上运行传入函数的结果。例如：</h2><p><code>var numbers = [1,2,3,4,5,6,7];</code><br><code>var mapresult = numbers.map(function(item,index,array){</code><br><code>return item*2;</code><br><code>});</code><br><code>alert(mapresult);//[2,4,6,8,10,12,14];</code>  </p>
+<h2 id="4-forEach"><a href="/2017/03/20/数组迭代方法，归并方法/#4-forEach" class="headerlink" title="4.forEach()"></a><strong>4.</strong>forEach()</h2><p>顾名思义，是一个循环数组的方法。  </p>
+<h2 id="5-reduce-，reduceRight-。"><a href="/2017/03/20/数组迭代方法，归并方法/#5-reduce-，reduceRight-。" class="headerlink" title="5.reduce()，reduceRight()。"></a>5.reduce()，reduceRight()。</h2><p>迭代i数组中的所有值，返回一个按条件计算的最终值。<br>reduce是从数组的逐个遍历<br>到最后。而reduceRight()则从数组的最后一项开始，向前遍历到第一项。<br>例如：<br><code>var values = [1,2,3,4,5];</code><br><code>var sum = values.reduce(function(prev, cur, index, array){</code><br><code>return prev + cur;</code><br><code>});</code><br><code>alert(sum);</code> //15<br>第一次执行回调函数，prev 是1，cur 是2。第二次，prev 是3（1 加2 的结果），cur 是3（数组<br>的第三项）。这个过程会持续到把数组中的每一项都访问一遍，最后返回结果。<br>resuceRight()函数和reduce类似，不过是倒序。  </p>
+
+          </section>
+        </article>
+        
+
+       
+        <div class="pager">
+          
+          
+            <a class="post-next pager-item" href="/2017/03/10/css常用字体/">
+              <strong class="article-nav-caption">下一篇</strong>
+              <p class="post-nav-title">css常用字体</p>
+            </a>
+          
+        </div>
+        
+
+         <!-- comments -->
+        <div class="comment-section">
+  
+    
+
+    <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="_posts/数组迭代方法，归并方法.md" data-title="css常用字体" data-url="http://liangjinxie.top/2017/03/20/数组迭代方法，归并方法/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+var duoshuoQuery = {short_name:"liangjinxie"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+    <!-- 多说公共JS代码 end -->
+
+  
+
+
+</div>
+
+    </div>
+    
+    <aside>
+        <div id="toc">
+        </div>
+    </aside>
+    
+</div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+    <p>由<a href="http://hexo.io/" target="_blank">Hexo</a>强力驱动，搭载<a href="https://github.com/wayou/hexo-theme-gstyle">gstyle</a>主题</p>
+    <p>
+        &copy; 2017 Pluto
+    </p>
+</footer>
+<script src="/lib/jquery.js"></script>
+<script src="/lib/waves.js"></script>
+<script src="/lib/jquery-ui.js"></script>
+<script src="/lib/jquery.tocify.js"></script>
+<script src="/js/main.js"></script>
+
+    </body>
+</html>
