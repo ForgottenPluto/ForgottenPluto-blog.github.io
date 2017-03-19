@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liangjinxie.top/"/>
-  <updated>2017-03-19T08:18:56.786Z</updated>
+  <updated>2017-03-19T08:22:30.043Z</updated>
   <id>http://liangjinxie.top/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>css常用字体</title>
+    <title>数组迭代方法，归并方法</title>
     <link href="http://liangjinxie.top/2017/03/20/%E6%95%B0%E7%BB%84%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95%EF%BC%8C%E5%BD%92%E5%B9%B6%E6%96%B9%E6%B3%95/"/>
     <id>http://liangjinxie.top/2017/03/20/数组迭代方法，归并方法/</id>
     <published>2017-03-20T07:19:27.000Z</published>
-    <updated>2017-03-19T08:18:56.786Z</updated>
+    <updated>2017-03-19T08:22:30.043Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-js-提供了一些迭代的方法，包括every-some-filter-map，forEach"><a href="/2017/03/20/数组迭代方法，归并方法/#1-js-提供了一些迭代的方法，包括every-some-filter-map，forEach" class="headerlink" title="1.js 提供了一些迭代的方法，包括every,some,filter,map，forEach."></a>1.js 提供了一些迭代的方法，包括every,some,filter,map，forEach.</h2><p>every()：对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true。<br>filter()：对数组中的每一项运行给定函数，返回该函数会返回true 的项组成的数组。<br>forEach()：对数组中的每一项运行给定函数。这个方法没有返回值。<br>map()：对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。<br>some()：对数组中的每一项运行给定函数，如果该函数对任一项返回true，则返回true.<br>every主要是用于判断一个素组中的值是否符合某个标准。必须是每个值都符合才会返回true。否则返回false.<br>而some()函数只需要有一个值返回的是true就会返回true.<br>例子如下：<br><code>var numbers = [1,2,3,4,5,4,3,2,1];</code><br><code>var everyResult = numbers.every(function(item, index, array){</code><br><code>return (item &gt; 2);</code><br><code>});</code><br><code>alert(everyResult);</code> //false<br><code>var someResult = numbers.some(function(item, index, array){</code><br><code>return (item &gt; 2);</code><br><code>});</code><br><code>alert(someResult);</code> //true  </p>
 <h2 id="2-filter，filter返回的是一个符合某种条件的数组。"><a href="/2017/03/20/数组迭代方法，归并方法/#2-filter，filter返回的是一个符合某种条件的数组。" class="headerlink" title="2.filter，filter返回的是一个符合某种条件的数组。"></a>2.filter，filter返回的是一个符合某种条件的数组。</h2><p>例如：数组<br><code>number = [1,2，1,3,5,3,4,9,6,9];</code><br><code>var result = number.filter(function(item,index,array){</code><br><code>return (item&gt;5);</code><br><code>});</code><br><code>alert(result); /[9,6,9];</code>   </p>
